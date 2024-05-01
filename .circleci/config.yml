@@ -8,10 +8,4 @@ workflows:
           cypress-command: npx cypress run --browser chrome
           install-browsers: true
           # start-command: npm run start:dev
-      steps:
-        - run:
-  #...
-  # run tests and store XML files to a subdirectory, for example, test-results
-  #...
-        - store_test_results:
-          path: test-results
+     
