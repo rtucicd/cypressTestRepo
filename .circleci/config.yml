@@ -4,9 +4,10 @@ orbs:
 workflows:
   use-my-orb:
     jobs:
-    parallelism: 4
       - cypress/run:
           cypress-command: npx cypress run --browser chrome
           install-browsers: true
+          parallelism: 4
+
           # start-command: npm run start:dev
      
