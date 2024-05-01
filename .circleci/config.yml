@@ -7,7 +7,7 @@ workflows:
       - cypress/run:
           cypress-command: npx cypress run --browser chrome
           install-browsers: true
-          parallelism: 4
+          parallelism: 1
           # store_artifacts: true
 
           # start-command: npm run start:dev
